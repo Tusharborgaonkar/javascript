@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>parseint convertion</h1>
+    <p id="paresient"></p>
+    <script>
+        document.getElementById("paresient").innerHTML=
+        parseInt("99")+"<br>"+
+        parseInt("3.14")+"<br>"+
+        parseInt("10 25 04")+"<br>"+
+        parseInt("99.33")+"<br>"+
+        parseInt("   100    ")+"<br>"
+        parseInt(" 12 years")+"<br>"
+        parseInt("i am 19")+
+        parseInt("99.99")
+        ;
+    </script>
+    <h1>paresefloat convertion</h1>
+    <p id="paresefloat"></p>
+
+    <script>
+        document.getElementById("paresientfloat").innerHTML=
+        parseFloat(10)+"<br>"+
+        parseFloat("11")+"<br>"+
+        parseFloat("15.33")+"<br>"+
+        parseFloat("3 4 5")+"<br>"+
+        parseFloat("he was 44");
+        </script>
+    <h1>Global methods</h1>
+    <p id="Global methods"></p>
+    <script>
+        document.getElementById("Global Methods").innerHTML=
+        Number(true)+"<br>"+
+        Number(false)+"<br>"+
+        Number(new Date());
+        </script>
+        <h1>date</h1>
+        <p id="date"></p>
+
+        <script>
+        const d= new Date();
+        document.getElementById("date").innerHTML = d;
+        </script>
+        <h1>iso notation</h1>
+        <p id="iso"></p>
+
+        <script>
+        const d = new Date("22-07-27");
+        document.getElementById("iso").innerHTML = d;</script>
+        <h1>boolean</h1>
+        <p id="boolean"></P>
+
+    <script>
+        document.getElementById("boolean").innerHTML=Boolean(10 > 9);
+        </script>
+        <h1>to string</h1>
+        <p id="to string"></p>
+        
+        <script>
+            let bool = true;
+            let text = bool.tostring();
+            document.getElementById("to string").innerHTML=typeof text;
+            </script>
+            <h1> max</h1>
+            <p id="max"></P>
+
+        <script>
+            document.getElementById("max").innerHTML=Number.MAX_VALUE;
+        </script>
+</body>
+</html>
